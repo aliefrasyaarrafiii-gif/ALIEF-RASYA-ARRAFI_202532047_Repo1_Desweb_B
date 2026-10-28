@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadi Relawan - Peta Kucing Kampus ITPLN</title>
+</head>
+<body>
+
+  <header>
+    <h1>Jadi Relawan Piket Makan</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="artikel.html">Profil Kucing</a></li>
+        <li><a href="kontak.html" aria-current="page">Jadi Relawan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Form Relawan</h2>
+      <p>Lihat dulu <a href="artikel.html">jadwal piket</a>, lalu isi form ini. Kolom bertanda wajib harus diisi.</p>
+
+      <form action="#" method="post">
+
+        <p>
+          <label for="nama">Nama lengkap (wajib)</label><br>
+          <input type="text" id="nama" name="nama" minlength="3" required>
+        </p>
+
+        <p>
+          <label for="email">Email (wajib)</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="area">Area piket yang dipilih (wajib)</label><br>
+          <select id="area" name="area" required>
+            <option value="">Pilih area</option>
+            <option value="kantin">Kantin</option>
+            <option value="taman">Taman kampus</option>
+            <option value="parkir">Area parkir</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Status di kampus (wajib)</legend>
+          <input type="radio" id="status-mhs" name="status" value="mahasiswa" required>
+          <label for="status-mhs">Mahasiswa</label>
+          <input type="radio" id="status-dosen" name="status" value="dosen">
+          <label for="status-dosen">Dosen</label>
+          <input type="radio" id="status-staf" name="status" value="staf">
+          <label for="status-staf">Staf</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hari piket yang tersedia</legend>
+          <input type="checkbox" id="hari-senin" name="hari" value="senin">
+          <label for="hari-senin">Senin</label>
+          <input type="checkbox" id="hari-selasa" name="hari" value="selasa">
+          <label for="hari-selasa">Selasa</label>
+          <input type="checkbox" id="hari-rabu" name="hari" value="rabu">
+          <label for="hari-rabu">Rabu</label>
+          <input type="checkbox" id="hari-kamis" name="hari" value="kamis">
+          <label for="hari-kamis">Kamis</label>
+          <input type="checkbox" id="hari-jumat" name="hari" value="jumat">
+          <label for="hari-jumat">Jumat</label>
+        </fieldset>
+
+        <p>
+          <label for="alasan">Alasan ingin menjadi relawan</label><br>
+          <textarea id="alasan" name="alasan" rows="4" cols="40" maxlength="300"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" required>
+          <label for="setuju">Saya bersedia mengikuti aturan memberi makan kucing kampus (wajib)</label>
+        </p>
+
+        <button type="submit">Daftar sebagai relawan</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Proyek praktikum Desain Web, Sistem Informasi, Institut Teknologi PLN</p>
+    <p><a href="index.html">Kembali ke beranda</a></p>
+  </footer>
+
+</body>
+</html>
